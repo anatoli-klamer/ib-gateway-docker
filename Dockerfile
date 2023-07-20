@@ -59,7 +59,10 @@ RUN apt-get install --no-install-recommends --yes \
   libxi6 \
   libgtk2.0-bin \
   socat \
-  x11vnc
+  x11vnc \
+  && \
+  apt-get clean && \
+  rm -rf /var/lib/apt/lists/*
 
 # Copy files
 COPY --from=setup /root/ .
