@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "ts-node test.ts"
+    "test": "ts-node test.ts",
+    "build":"docker build . -t ib-gw && npm test"
   },
   "author": "",
   "license": "ISC",
