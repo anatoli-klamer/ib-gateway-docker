@@ -4,7 +4,9 @@ services:
   ib-gateway:
     restart: always
     build:
-      context: ./latest
+      context: .
+    env_file:
+      - .env
     environment:
       TWS_USERID: ${TWS_USERID}
       TWS_PASSWORD: ${TWS_PASSWORD}

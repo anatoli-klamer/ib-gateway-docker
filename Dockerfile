@@ -44,7 +44,7 @@ COPY ./scripts /root/scripts
 
 FROM ubuntu:22.04
 
-ENV IB_GATEWAY_VERSION=$VERSION
+ENV IB_GATEWAY_VERSION=10.23.2b
 
 WORKDIR /root
 
